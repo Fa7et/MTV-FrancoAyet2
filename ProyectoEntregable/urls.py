@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppEntregable.views import familiar, templatehtml
+from AppEntregable.views import familiar, familiar2, familiar3, templatehtml
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('family/', familiar),
+    path('family2/', familiar2),
+    path('family3/', familiar3),
     path('html/', templatehtml),
     
 ]
